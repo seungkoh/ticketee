@@ -33,6 +33,10 @@ module Ticketee
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # If you are deploying Rails 3.1 on Heroku, you may want to set:
+    #  config.assets.initialize_on_precompile = false
+    # Forcing your application to not access the DB or load models when precompiling your assets.
+         
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

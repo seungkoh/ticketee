@@ -36,3 +36,5 @@ group :test do
   gem 'factory_girl'
 end
 gem 'rspec-rails', '~>2.8.1', :group => [:development, :test]
+
+gem 'devise', '~> 1.4.3'

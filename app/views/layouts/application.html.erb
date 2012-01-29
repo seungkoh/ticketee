@@ -20,7 +20,10 @@
   </div>
 <% end %>
 
-<h1><%= link_to 'Ticketee', root_path %>	
+<h1><%= link_to 'Ticketee', root_path %>
+<nav>
+	<%= link_to "Sign up", new_user_registration_path %>
+</nav>		
 <%= yield %>
 
 </body>
