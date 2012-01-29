@@ -34,6 +34,7 @@ group :test do
   gem 'capybara' 
   gem 'database_cleaner'
   gem 'factory_girl'
+  gem 'email_spec'
 end
 gem 'rspec-rails', '~>2.8.1', :group => [:development, :test]
 
