@@ -36,7 +36,7 @@ group :test do
   gem 'factory_girl'
   gem 'email_spec'
 end
-gem 'rspec-rails', '~>2.8.1', :group => [:development, :test]
+gem 'rspec-rails', '~>2.5', :group => [:development, :test]
 
 gem 'devise', '~> 1.4.3'
 gem 'cancan'
