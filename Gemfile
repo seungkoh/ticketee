@@ -39,3 +39,4 @@ end
 gem 'rspec-rails', '~>2.8.1', :group => [:development, :test]
 
 gem 'devise', '~> 1.4.3'
+gem 'cancan'
