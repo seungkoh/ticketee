@@ -35,6 +35,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'email_spec'
+  gem 'launchy'
 end
 gem 'rspec-rails', '~>2.5', :group => [:development, :test]
 
