@@ -16,3 +16,6 @@
 
 # Ignore TextMate project file.
 /*.tmproj
+
+# Ignore system files that might be saved here by Paperclip gem during tests
+public/system
