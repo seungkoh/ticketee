@@ -40,3 +40,5 @@ gem 'rspec-rails', '~>2.5', :group => [:development, :test]
 
 gem 'devise', '~> 1.4.3'
 gem 'cancan'
+
+gem 'paperclip'

@@ -1,6 +1,6 @@
 <h2>Permissions for <%= @user.email %></h2>
 <%= form_tag update_user_permissions_path, :method => :put do %>
-	<table>
+	<table class='permissions'>
 		<thead>
 			<th>Project</th>
 			<% permissions.each do |name, text| %>
@@ -13,7 +13,7 @@
 					<td><%= project.name %></td>
 					<% permissions.each do |name, text| %>
 						<td>
-							<%= check_box_tag "permissions[#{project.id}][#{name}]",
+							<%= check_box_tag "permissions[#{project.id}][#{name}]", text,
 								@ability.can?(name.to_sym, project) %>
 						</td>
 					<% end %>
