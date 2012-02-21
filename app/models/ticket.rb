@@ -1,6 +1,7 @@
 class Ticket < ActiveRecord::Base
-  validates :title, :presence => true
-  validates :description, :presence => true, :length => { :minimum => 10 }
+  searcher do
+    label :tag, :from => :tags, :field => :name
+  end
   
   belongs_to :project
   belongs_to :state
@@ -12,6 +13,9 @@ class Ticket < ActiveRecord::Base
   has_many :comments
   
   has_and_belongs_to_many :tags
+
+  validates :title, :presence => true
+  validates :description, :presence => true, :length => { :minimum => 10 }
   
   def tag!(tags)
     tags = tags.split(" ").map do |tag|
