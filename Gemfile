@@ -37,7 +37,11 @@ group :test do
   gem 'email_spec'
   gem 'launchy'
 end
-gem 'rspec-rails', '~>2.5', :group => [:development, :test]
+
+group :test, :development do
+  gem 'rspec-rails', '~>2.5'
+  gem 'gmail'
+end
 
 gem 'devise', '~> 1.4.3'
 gem 'cancan'
