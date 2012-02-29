@@ -39,7 +39,7 @@ group :test do
 end
 
 group :test, :development do
-  gem 'rspec-rails', '~>2.5'
+  gem 'rspec-rails', '2.6.1' #'~>2.5'
   gem 'gmail'
 end
 

@@ -10,7 +10,6 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
   config.mock_with :rspec
-  config.include Devise::TestHelpers
   
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
